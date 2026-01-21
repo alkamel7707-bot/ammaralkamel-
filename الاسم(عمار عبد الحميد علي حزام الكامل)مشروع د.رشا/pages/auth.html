@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول | وكالة صنعاء</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>حسابي</h1>
+        <p>انضم إلينا أو سجل دخولك لمتابعة مشاريعك</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="auth.html" class="active">تسجيل الدخول</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="auth-container">
+            <div class="auth-tabs">
+                <button class="tab-btn active" onclick="showAuth('login')">تسجيل الدخول</button>
+                <button class="tab-btn" onclick="showAuth('signup')">إنشاء حساب</button>
+            </div>
+
+            <div id="login-form" class="auth-box">
+                <h2>تسجيل الدخول</h2>
+                <form onsubmit="return validateLogin(event)">
+                    <div class="form-group">
+                        <label for="login-email">البريد الإلكتروني:</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-pass">كلمة المرور:</label>
+                        <input type="password" id="login-pass" required>
+                    </div>
+                    <button type="submit" class="btn">دخول</button>
+                </form>
+            </div>
+
+            <div id="signup-form" class="auth-box" style="display: none;">
+                <h2>إنشاء حساب جديد</h2>
+                <form onsubmit="return validateSignup(event)">
+                    <div class="form-group">
+                        <label for="signup-name">الاسم الكامل:</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">البريد الإلكتروني:</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-pass">كلمة المرور:</label>
+                        <input type="password" id="signup-pass" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm">تأكيد كلمة المرور:</label>
+                        <input type="password" id="signup-confirm" required>
+                    </div>
+                    <button type="submit" class="btn">إنشاء الحساب</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 وكالة الإبداع الرقمي</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

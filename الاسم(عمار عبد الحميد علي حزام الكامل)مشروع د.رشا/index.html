@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وكالة الإبداع | الرئيسية</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>وكالة  صنعاء</h1>
+        <p>نبتكر الحلول لمستقبلك الرقمي</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="pages/about.html">من نحن</a></li>
+            <li><a href="pages/services.html">خدماتنا</a></li>
+            <li><a href="pages/contact.html">تواصل معنا</a></li>
+            <li><a href="pages/auth.html">تسجيل الدخول</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="slider-section">
+            <!-- Slider Container -->
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide fade">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=800" alt="Slide 1">
+                        <div class="caption">تصاميم عصرية</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Slide 2">
+                        <div class="caption">فريق عمل متكامل</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" alt="Slide 3">
+                        <div class="caption">حلول تقنية متطورة</div>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            <section id="welcome">
+                <h2>مرحباً بكم في وكالتنا</h2>
+                <p>نحن نقدم أفضل الخدمات التقنية لتطوير أعمالكم وزيادة إنتاجيتكم في السوق الرقمي.</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-rocket"></i>
+                        <h3>سرعة الأداء</h3>
+                        <p>نضمن لك سرعة فائقة في تنفيذ المشاريع.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>أمان عالي</h3>
+                        <p>حماية بياناتك هي أولويتنا القصوى.</p>
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <h3>أحدث الأخبار</h3>
+                <ul>
+                    <li>إطلاق تطبيقنا الجديد</li>
+                    <li>الفوز بجائزة أفضل تصميم 2025</li>
+                    <li>توسيع خدماتنا لتشمل الذكاء الاصطناعي</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 وكالة الإبداع الرقمي</p>
+    </footer>
+
+    <!-- Toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Show Toast Notification on Load
+        window.onload = function() {
+            if(typeof Toastify === "function") {
+                Toastify({
+                    text: "مرحباً بك في موقعنا الجديد!",
+                    duration: 3000,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+                }).showToast();
+            }
+        }
+    </script>
+</body>
+</html>
